@@ -68,18 +68,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GrU-RW-o3f">
+                                <rect key="frame" x="85.5" y="445.5" width="204" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year Created: 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1p-HV-Rem">
+                                <rect key="frame" x="70.5" y="498" width="234" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="x1p-HV-Rem" firstAttribute="centerX" secondItem="OFu-m6-YNf" secondAttribute="centerX" id="Bc7-Ds-QNt"/>
+                            <constraint firstItem="x1p-HV-Rem" firstAttribute="top" secondItem="GrU-RW-o3f" secondAttribute="bottom" constant="20" id="Ktb-tb-bB3"/>
                             <constraint firstItem="c9F-Z3-uxd" firstAttribute="centerX" secondItem="OFu-m6-YNf" secondAttribute="centerX" id="Wcn-a6-Xsh"/>
+                            <constraint firstItem="GrU-RW-o3f" firstAttribute="centerX" secondItem="OFu-m6-YNf" secondAttribute="centerX" id="YTh-SU-OuU"/>
                             <constraint firstItem="uuA-MR-usc" firstAttribute="top" secondItem="iEK-YV-7HI" secondAttribute="bottom" constant="40" id="adw-Ai-gFZ"/>
+                            <constraint firstItem="GrU-RW-o3f" firstAttribute="top" secondItem="c9F-Z3-uxd" secondAttribute="bottom" constant="20" id="cOn-nh-f3m"/>
                             <constraint firstItem="uuA-MR-usc" firstAttribute="centerX" secondItem="OFu-m6-YNf" secondAttribute="centerX" id="cdc-Y6-eUs"/>
+                            <constraint firstItem="GrU-RW-o3f" firstAttribute="top" secondItem="c9F-Z3-uxd" secondAttribute="bottom" constant="20" id="gDJ-WQ-Bb7"/>
                             <constraint firstItem="c9F-Z3-uxd" firstAttribute="top" secondItem="uuA-MR-usc" secondAttribute="bottom" constant="50" id="quG-ik-ca5"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="GrU-RW-o3f" id="QPV-OK-nxE"/>
                         <outlet property="definitionLabel" destination="c9F-Z3-uxd" id="2C3-5w-h4N"/>
                         <outlet property="emojiLabel" destination="uuA-MR-usc" id="dWF-yM-lPY"/>
+                        <outlet property="yearCreatedLabel" destination="x1p-HV-Rem" id="9SI-4w-d4g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szx-yu-uWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
